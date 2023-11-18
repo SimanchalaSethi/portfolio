@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Backend Developer</p>
+                <h1>Hi, I'm <span>Simanchala Sethi</span><br>From Berhampur, Odisha</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------about----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Experienced Java Back-end Developer with 5 months of
+                        professional experience. Proficient in Java, Spring Boot, and
+                        PL/SQL. Skilled in crafting efficient, scalable solutions and
+                        enhancing system performance. Adept at problem-solving
+                        and collaborating in dynamic teams to deliver high-quality
+                        applications, exceeding project goals.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('tools')">Tools</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links  " onclick="opentab('education')">Education</p>
+                        <p class="tab-links  " onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><p>Java</p> </li>
+                            <li><span>Frameworks</span><p>Spring Boot</p></li>
+                            <li><span>Web Technologies</span><p>J2EE, REST APIs, HTML, CSS</p> </li>
+                            <li><span>Database</span><p>SQL</p> </li>
+                            <li><span>Version Control</span><p>Git</p></li>
+                            <li><span>Containerization</span><p>Docker</p></li>
+                            <li><span>Architecture</span><p>Microservices</p></li>
+                            <li><span>Development Tools</span><p>Maven</p></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li><span>Intellij</span><br> </li>
+                            <li><span>Postman</span><br></li>
+                            <li><span>VS Code</span><br></li>
+                            <li><span>MySQL</span><br></li>
+                            <li><span>SQL Developer</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Assistance System Engineer Trainee at Wowoni Private Limited</span><br>Contributed to a FLEXCUBE Application project
+                                using Spring Boot, Java, and Oracle DB, specializing in bug resolution, documentation, and code deployment on GitHub. Collaborated
+                                effectively with senior team members to
+                                ensure project success, while gaining valuable
+                                experience and enhancing technical skills.</li>
+                            <li>Submitted monthly reports and managing my
+                                team under my supervision.
+                                </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology (2018 - 2022) (8.77 CGPA)</span><br> Mechanical Engineering from Kalam Institute Of Technology, Berhampur, Odisha.</li>
+                            <li><span>12th (2018 - 2022)</span><br> Science from Tara Tarini College, Purushottampur,Odisha</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Cycling</span><br></li>
+                            <li><span>Traveling</span><br></li>
+                            <li><span>Cooking</span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services----------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>As a seasoned web developer, I specialize in leveraging Java, Spring Boot, and SQL to build robust and scalable solutions. From database design to server-side logic, let's create a technology-driven masterpiece that aligns with your goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------portfolio------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-11.jpg">
+                    <div class="layer">
+                        <h3>Hotel User Rating Management</h3>
+                        <p>This application has been designed based on the Microservices architecture, incorporating systems for users, hotels, and ratings.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-112.jpg">
+                    <div class="layer">
+                        <h3>Back-End-Bank-Application</h3>
+                        <p>This is a secure and user-friendly online
+                            banking system using Java and Spring Boot. Designed a MySQL database with tables for user
+                            details, account information, and transaction
+                            records. Implemented features such as user
+                            authentication, online fund transfers, balance
+                            checks, and transaction history retrieval. Utilized
+                            JSON Web Tokens (JWT) for secure authentication.</p>
+                        <a href="https://github.com/SimanchalaSethi/Back-End-Bank-Application"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping-App-Prototype</h3>
+                        <p>This is a simple shopping web prototype Java web app.</p>
+                        <a href="https://github.com/SimanchalaSethi/Shopping-App-Prototype"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>simanchala.dev@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9583985948</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/simanchala-sethi-672a5b166/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                           <a href="https://github.com/SimanchalaSethi"><i class="fa-brands fa-square-github"></i></a>     
+                        <a href="https://www.instagram.com/simanchala_ss/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Simanchala Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+       
+</body>
+
+</html>
