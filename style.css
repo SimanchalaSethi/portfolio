@@ -378,6 +378,9 @@ nav .fa-solid {
         font-size: 23px;
 
     }
+    #header{
+        background-image: url(images/background\ mobile.jpg);
+    }
 
     nav .fa-solid {
         display: none;
