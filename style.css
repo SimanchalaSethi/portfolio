@@ -80,7 +80,15 @@ nav ul li a:hover::after {
 .header-text h1 span {
     color: #ff004f;
 }
-
+.coat{
+    margin-top: 450px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #7565ee;
+}
 /* ----------------about--------------- */
 #about {
     padding: 80px 0;
@@ -380,6 +388,15 @@ nav .fa-solid {
     }
     #header{
         background-image: url(images/background\ mobile.jpg);
+    }
+     .coat{
+        margin-top: 490px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #978bf5;
     }
     nav .fa-solid {
         display: none;
